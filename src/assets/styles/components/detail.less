@@ -1,12 +1,12 @@
 .section-detail{
-	.gallery{
-		flex: 0 6 600px;
+	@width: 600px;
+	article{
+		justify-content: center;
 	}
-	.comments{
-		flex: 0 4 335px;
-		padding: 0 10px;
+	.gallery{
+		width: @width;
 	}
 	img{
-		width: 600px;
+		width: @width;
 	}
 }

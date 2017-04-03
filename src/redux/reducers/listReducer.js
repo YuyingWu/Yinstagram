@@ -16,7 +16,7 @@ const listReducer = (state = {
                 }
             ],
             id: 1,
-            desc: 'beautiful place in Katikati. Kauri Point fishing spot.'
+            desc: 'beautiful place in Katikati. Kauri Point fishing spot.beautiful place in Katikati. Kauri Point fishing spot.beautiful place in Katikati. Kauri Point fishing spot.beautiful place in Katikati. Kauri Point fishing spot.'
         },
         {
             img: 'https://instagram.fhkg3-1.fna.fbcdn.net/t51.2885-15/s640x640/sh0.08/e35/c135.0.809.809/14733182_1278964905512358_5806272214793715712_n.jpg',

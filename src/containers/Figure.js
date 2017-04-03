@@ -25,8 +25,7 @@ class Figure extends React.Component {
             layerTpl = (
                 <div className="figure-layer">
                     <div className="display-flex">
-                        <p>Like: { props.like }</p>
-                        <p>Comments: { props.comments.length }</p>
+                        <p>{ props.desc }</p>
                     </div>
                 </div>
             );

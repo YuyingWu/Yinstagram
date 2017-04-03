@@ -14,18 +14,6 @@ class Detail extends React.Component {
                     <figure className="gallery">
                         <img src={current.img} />
                     </figure>
-
-                    <aside className="comments">
-                        <h2>评论</h2>
-                        <ul>
-                            { current.comments.map(item => (
-                                <li key={ item.id }>
-                                    <strong>{ item.name }</strong>
-                                    <span>{ item.content }</span>
-                                </li>
-                            )) }
-                        </ul>
-                    </aside>
                 </article>
             </main>
         );

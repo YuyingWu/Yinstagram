@@ -6,7 +6,7 @@ export const Nav = () => {
 	return (
 		<nav className='c-nav'>
 			<h1>
-				<Link to={'/'} activeClassName={'active'}>Ystagram</Link>
+				<Link to={'/'} activeClassName={'active'}>Yinstagram</Link>
 			</h1>
 		</nav>
 	)

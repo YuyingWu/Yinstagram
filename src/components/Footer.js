@@ -5,8 +5,8 @@ import { Link } from 'react-router';*/
 
 export const Footer = () => {
 	return (
-		<footer className='c-footer'>
-			&copy; 2017 Yuying Wu
+		<footer className="c-footer">
+			&copy; 2017 <a href="http://demo.wuyuying.com/">Yuying Wu</a> | Gallery web application based on ReactJS inspired by Instagram.
 		</footer>
 	)
 }

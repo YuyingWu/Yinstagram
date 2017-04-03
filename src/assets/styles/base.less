@@ -20,6 +20,16 @@
 /**
  * custom style
  */
+@font-face {
+    font-family: "Billabong";
+    src: url("/static/fonts/billabong.eot"); /* IE9 */
+    src: url("/static/fonts/billabong.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/static/fonts/billabong.woff") format("woff"), /* chrome, firefox */
+    url("/static/fonts/billabong.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("/static/fonts/billabong.svg#Billabong") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
 body{
     font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
     font-size: 62.5%;
@@ -37,4 +47,8 @@ ul{
 .container{
     max-width: 935px;
     margin: 0 auto;
+}
+a{
+    color: #000;
+    text-decoration: none;
 }
