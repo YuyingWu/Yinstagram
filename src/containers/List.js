@@ -15,6 +15,8 @@ class List extends React.Component {
                     { list.map((item) => (
                         <Figure {...item} key={ item.id } />
                     )) }
+
+                    { list.length % 3 == 2 ?  <div className="c-figure" /> : ''}
                 </article>
             </main>
         );

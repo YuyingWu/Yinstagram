@@ -5,12 +5,14 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var DIST_DIR = path.resolve(__dirname, 'dist');
 var SRC_DIR = path.resolve(__dirname, 'src');
 
+const APP_NAME = 'yinstagram';
+
 var config = {
     entry: SRC_DIR + '/index.js',
     output: {
-        path: DIST_DIR + '/app',
+        path: DIST_DIR + '/' + APP_NAME,
         filename: 'bundle.js',
-        publicPath: '/app/'
+        publicPath: '/' + APP_NAME
     },
     module: {
         loaders: [
