@@ -4,8 +4,13 @@ import React from "react";
 import { Link } from "react-router";
 import { connect } from "react-redux";
 import Figure from "./Figure";
+import IO from "../assets/js/io";
 
 class List extends React.Component {
+    componentDidMount() {
+        // lazyload
+        new IO();
+    }
     render() {
         const list = this.props.list;
 

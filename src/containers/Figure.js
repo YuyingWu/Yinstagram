@@ -1,8 +1,6 @@
 import '../assets/styles/components/figure.less';
 import React from 'react';
 import { Link } from 'react-router';
-import Lazyload from '../components/Lazyload';
-
 
 class Figure extends React.Component {
     constructor(props) {
@@ -40,7 +38,7 @@ class Figure extends React.Component {
                 onMouseEnter={ () => this.toggleLayer() } 
                 onMouseLeave={ () => this.toggleLayer() } >
                 <figure key={ props.id }>
-                     <Lazyload img={ props.img }/>
+                    <img data-src={ props.img } />
                 </figure>
                 { layerTpl }
             </Link>
