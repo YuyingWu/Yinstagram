@@ -1,12 +1,16 @@
 .section-detail{
 	@width: 600px;
 	article{
-		justify-content: center;
+		height: @width;
+		border: 1px solid #eee;
 	}
 	.gallery{
-		width: @width;
+		flex: 0 60 @width;
+	}
+	aside{
+		flex: 0 40 900-@width;
 	}
 	img{
-		width: @width;
+		width: 100%;
 	}
 }

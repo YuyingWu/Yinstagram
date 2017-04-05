@@ -2,8 +2,19 @@ import "../assets/styles/components/detail.less";
 import React from "react";
 import { Link } from "react-router";
 import { connect } from "react-redux";
+import CommentBox from "./Comment/CommentBox";
 
 class Detail extends React.Component {
+    /*componentWillUpdate: function() {
+        var node = this.getDOMNode();
+        this.shouldScrollBottom = node.scrollTop + node.offsetHeight === node.scrollHeight;
+    },
+    componentDidUpdate: function() {
+        if (this.shouldScrollBottom) {
+            var node = this.getDOMNode();
+            node.scrollTop = node.scrollHeight
+        }
+    },*/
     render() {
         const list = this.props.list;
         const current = list.find((item) => (item.id == this.props.params.id));
@@ -14,6 +25,9 @@ class Detail extends React.Component {
                     <figure className="gallery">
                         <img src={current.img} />
                     </figure>
+                    <aside>
+                        <CommentBox/>
+                    </aside>
                 </article>
             </main>
         );
